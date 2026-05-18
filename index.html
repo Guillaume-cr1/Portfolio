@@ -1,0 +1,171 @@
+<<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Guillaume Crampé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Outfit:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html" style="color:inherit;text-decoration:none;">Portfolio</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                <li><a href="pages/parcours.html" class="nav-link">Parcours</a></li>
+                <li><a href="pages/competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="pages/realisations.html" class="nav-link">Réalisations</a></li>
+                <li><a href="pages/veille.html" class="nav-link">Veille</a></li>
+                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                BTS SIO · Option SLAM
+            </div>
+            <h1 class="hero-title">
+                Guillaume
+                <em>Crampé</em>
+            </h1>
+            <p class="hero-subtitle">Étudiant passionné par le développement web, la cybersécurité et les nouvelles technologies.</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="about">
+            <div class="container">
+                <h2>À propos de moi</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Étudiant en BTS SIO (Services Informatiques aux Organisations) option SLAM,
+                        je suis passionné par le développement web, la cybersécurité et les nouvelles technologies.</p>
+                        <p>Ponctuel, organisé et doté d'un excellent relationnel, j'aime travailler en équipe
+                        et relever de nouveaux défis. Je recherche activement un stage pour approfondir mes
+                        compétences et contribuer à des projets innovants.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/profil.jpg" alt="Guillaume Crampé">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="competences">
+            <div class="container">
+                <h2>Mes Compétences</h2>
+                <div class="competences-grid">
+                    <div class="competence-card">
+                        <div class="card-bar bar-green"></div>
+                        <h3>Développement Web</h3>
+                        <p>HTML5, CSS3, JavaScript — Création de sites responsives et dynamiques</p>
+                    </div>
+                    <div class="competence-card">
+                        <div class="card-bar bar-blue"></div>
+                        <h3>Design Graphique</h3>
+                        <p>Adobe Illustrator, Photoshop — Création de visuels et d'affiches professionnelles</p>
+                    </div>
+                    <div class="competence-card">
+                        <div class="card-bar bar-orange"></div>
+                        <h3>Cybersécurité</h3>
+                        <p>Veille technologique, sécurité des systèmes et protection des données</p>
+                    </div>
+                    <div class="competence-card">
+                        <div class="card-bar bar-green"></div>
+                        <h3>Outils Bureautiques</h3>
+                        <p>Pack Office (Word, Excel, PowerPoint) — Gestion de projets et documentation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formation">
+            <div class="container">
+                <h2>Formation</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-dot dot-green"></div>
+                            <div class="timeline-bar"></div>
+                        </div>
+                        <div class="timeline-right">
+                            <p class="timeline-year year-green">2025 – 2027</p>
+                            <div class="timeline-box">
+                                <h4>BTS SIO – Option SLAM</h4>
+                                <p>Lycée Saint-John-Perse, Pau</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-dot dot-blue"></div>
+                        </div>
+                        <div class="timeline-right">
+                            <p class="timeline-year year-blue">2025</p>
+                            <div class="timeline-box">
+                                <h4>Baccalauréat Général</h4>
+                                <p>Lycée Peyramale Saint-Joseph, Lourdes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-dot dot-blue"></div>
+                        </div>
+                        <div class="timeline-right">
+                            <p class="timeline-year year-blue">2021</p>
+                            <div class="timeline-box">
+                                <h4>Diplome national du brevet </h4>
+                                <p>Lycée Peyramale Saint-Joseph, Lourdes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Me Contacter</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Guillaume Crampé — Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
