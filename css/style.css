@@ -518,11 +518,11 @@ footer p { color: #7aafc8; font-size: 13px; }
     }
 }
 
-/* Présentation de l'entreprise avec image */
+/* Présentation de l'entreprise : texte à gauche, logo à droite */
 .stage-presentation {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 30px;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 35px;
     align-items: center;
 }
 
@@ -532,22 +532,30 @@ footer p { color: #7aafc8; font-size: 13px; }
     margin-bottom: 16px;
 }
 
+.stage-presentation-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .stage-presentation-image img {
     width: 100%;
-    height: 280px;
+    max-width: 260px;
+    height: 220px;
     object-fit: contain;
-    background: #f5f8fc;
+    background: #ffffff;
     border: 1px solid #c8dff0;
     border-radius: 12px;
-    padding: 15px;
+    padding: 10px;
 }
 
 @media (max-width: 700px) {
     .stage-presentation {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .stage-presentation-image img {
-        height: 220px;
+        height: 180px;
     }
 }
