@@ -333,86 +333,103 @@ footer p { color: #7aafc8; font-size: 13px; }
    Pages des stages
 ========================= */
 
-.stage-page {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 40px 20px 60px;
+/* =========================
+   Pages des stages
+   Style assorti au portfolio
+========================= */
+
+.stage-banner {
+    background: #2a5a8c;
+    padding: 55px 0 60px;
 }
 
-.stage-hero {
-    padding: 45px 35px;
-    margin-bottom: 35px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #e8f4f5, #eaf1ff);
+.stage-banner h1 {
+    color: #ffffff;
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 18px 0 12px;
+}
+
+.stage-banner h1 em {
+    color: #00d060;
+    font-style: italic;
+}
+
+.stage-banner > .container > p:last-child {
+    color: #c8e0f4;
+    font-size: 17px;
+    max-width: 650px;
+}
+
+.stage-summary {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 55px;
+}
+
+.stage-summary > div {
+    min-width: 0;
+    padding: 20px;
+    background: #f5f8fc;
+    border: 1px solid #c8dff0;
+    border-radius: 10px;
 }
 
 .stage-label {
-    color: #168b83;
-    font-weight: 700;
+    display: block;
+    margin-bottom: 7px;
+    color: #2a5a8c;
+    font-size: 12px;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.85rem;
+    letter-spacing: 0.5px;
 }
 
-.stage-hero h1 {
-    margin: 15px 0;
-    color: #173b5e;
-    font-size: 2.4rem;
-}
-
-.stage-subtitle {
-    font-size: 1.1rem;
-    color: #526575;
-    line-height: 1.7;
-}
-
-.stage-infos {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-    margin-top: 30px;
-}
-
-.stage-infos p {
-    margin: 0;
-    padding: 14px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-    color: #34495e;
+.stage-summary strong {
+    display: block;
+    color: #1b3a5c;
+    font-size: 15px;
+    overflow-wrap: anywhere;
 }
 
 .stage-section {
-    margin: 35px 0;
+    margin: 0 0 52px;
 }
 
-.stage-section h2 {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    color: #173b5e;
-    border-bottom: 2px solid #32a89d;
-}
-
-.stage-section p {
+.stage-section > p,
+.stage-review p {
+    max-width: 850px;
+    color: #4a6a8a;
     line-height: 1.8;
-    color: #4d5d6c;
+    margin-bottom: 14px;
+}
+
+.stage-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .stage-card {
-    margin: 15px 0;
-    padding: 22px;
-    border-radius: 12px;
+    min-width: 0;
+    padding: 24px;
     background: #ffffff;
-    border: 1px solid #e1e8ed;
-    box-shadow: 0 4px 12px rgba(20, 50, 70, 0.05);
+    border: 1px solid #c8dff0;
+    border-radius: 12px;
 }
 
 .stage-card h3 {
-    margin-top: 0;
-    color: #208c87;
+    margin-bottom: 10px;
+    color: #1b3a5c;
+    font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .stage-card p {
-    margin-bottom: 0;
+    color: #5a7a96;
+    font-size: 14px;
+    line-height: 1.8;
 }
 
 .stage-tags {
@@ -423,51 +440,138 @@ footer p { color: #7aafc8; font-size: 13px; }
 
 .stage-tags span {
     display: inline-block;
-    padding: 9px 14px;
-    border-radius: 20px;
-    background: #e5f4f2;
-    color: #176d68;
-    font-size: 0.9rem;
+    padding: 6px 12px;
+    background: #eaf2fa;
+    color: #2a5a8c;
+    border-radius: 6px;
+    font-size: 13px;
     font-weight: 600;
 }
 
+.stage-review {
+    padding: 24px;
+    background: #f5f8fc;
+    border-left: 4px solid #00b050;
+    border-radius: 0 10px 10px 0;
+}
+
+.stage-review p:last-child {
+    margin-bottom: 0;
+}
+
 .stage-back {
-    margin-top: 40px;
-}
-
-.stage-back a {
     display: inline-block;
-    padding: 12px 20px;
-    border-radius: 8px;
-    background: #173b5e;
+    padding: 11px 20px;
+    background: #1b3a5c;
     color: #ffffff;
-    text-decoration: none;
-    transition: background 0.2s ease;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
 }
 
-.stage-back a:hover {
-    background: #208c87;
+.stage-back:hover {
+    background: #2a5a8c;
 }
 
-/* Adaptation aux mobiles */
-@media (max-width: 600px) {
-    .stage-page {
-        padding: 25px 15px 40px;
+/* Menu déroulant : adaptation au thème du site */
+.nav-item-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 205px;
+    padding: 8px 0;
+    margin: 0;
+    list-style: none;
+    background: #1b3a5c;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    z-index: 200;
+}
+
+.nav-submenu li a {
+    display: block;
+    padding: 10px 16px;
+    color: #deeeff;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.nav-submenu li a:hover,
+.nav-submenu li a.active {
+    color: #00d060;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-item-dropdown:hover .nav-submenu,
+.nav-item-dropdown:focus-within .nav-submenu {
+    display: block;
+}
+
+.nav-item-dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Adaptation aux écrans plus petits */
+@media (max-width: 900px) {
+    .stage-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .stage-banner {
+        padding: 42px 0;
     }
 
-    .stage-hero {
-        padding: 28px 20px;
-    }
-
-    .stage-hero h1 {
-        font-size: 1.8rem;
-    }
-
-    .stage-infos {
+    .stage-grid {
         grid-template-columns: 1fr;
     }
 
-    .stage-card {
+    .nav-item-dropdown {
+        width: 100%;
+    }
+
+    .nav-submenu {
+        position: static;
+        width: 100%;
+        min-width: 0;
+        margin-top: 8px;
+        padding-left: 12px;
+        box-shadow: none;
+        border-radius: 6px;
+        background: rgba(0, 0, 0, 0.12);
+    }
+
+    .nav-item-dropdown:focus-within .nav-submenu {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .stage-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .stage-card,
+    .stage-review {
         padding: 18px;
     }
 }
