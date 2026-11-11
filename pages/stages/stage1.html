@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stage de première année | Guillaume Crampe</title>
     <link rel="stylesheet" href="../../css/style.css">
+<style>
+.stage-btn{display:inline-block;background:#00b050;color:#fff;border-radius:8px;padding:10px 22px;font-weight:700;font-size:14px;margin-top:18px}
+.stage-btn:hover{opacity:.9}
+.stage-proj{background:#fff;border:1px solid #c8dff0;border-left:4px solid #00b050;border-radius:0 12px 12px 0;padding:22px 24px;margin-bottom:24px}
+.stage-proj h3{font-size:18px;color:#1b3a5c;margin-bottom:4px;font-family:'Outfit',sans-serif}
+.stage-proj .proj-client{font-size:12px;color:#00b050;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.stage-proj p,.stage-proj li{font-size:14px;color:#4a6a8a;line-height:1.8}
+.stage-proj ul,.stage-ol{padding-left:20px;margin:8px 0 12px}
+.stage-proj strong{color:#1b3a5c}
+.stage-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:10px}
+.stat-box{background:#eaf2fa;border-radius:12px;padding:20px 14px;text-align:center}
+.stat-box b{display:block;font-size:26px;color:#2a5a8c;font-family:'Playfair Display',serif}
+.stat-box span{font-size:13px;color:#5a7a96}
+.table-wrap{overflow-x:auto}
+.stage-table{width:100%;border-collapse:collapse;font-size:13px;background:#fff}
+.stage-table th{background:#1b3a5c;color:#fff;text-align:left;padding:10px 12px}
+.stage-table td{padding:10px 12px;border-bottom:1px solid #c8dff0;color:#4a6a8a;vertical-align:top}
+.stage-table td:first-child{font-weight:700;color:#00b050;white-space:nowrap}
+.annexes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.annexes-grid figcaption,.stage-fig figcaption{font-size:12px;color:#6a8aaa;text-align:center;margin-top:-8px;margin-bottom:12px}
+.stage-fig{margin:12px 0 4px}
+</style>
 </head>
 
 <body>
@@ -42,120 +64,182 @@
         <section class="stage-hero">
             <p class="stage-label">BTS SIO SLAM · Première année</p>
             <h1>Mon stage chez Tribu Nomade</h1>
-            <p class="stage-subtitle">
-                Découverte du développement web et de la maintenance de sites internet.
-            </p>
-
+            <p class="stage-subtitle">Intégration applicative et cyber-maintenance de sites web sous Joomla.</p>
             <div class="stage-infos">
-                <p><strong>Entreprise :</strong> Tribu Nomade</p>
+                <p><strong>Entreprise :</strong> SARL Tribu Nomade</p>
                 <p><strong>Lieu :</strong> Argelès-Gazost (65)</p>
                 <p><strong>Période :</strong> du 25 mai au 26 juin 2026</p>
                 <p><strong>Durée :</strong> 5 semaines</p>
+                <p><strong>Tuteur :</strong> Aurélien Saint-Martin</p>
+                <p><strong>Professeur référent :</strong> Mme Higueres</p>
             </div>
+            <a class="stage-btn" href="../../documents/rapport-stage-1.pdf" target="_blank" rel="noopener">Télécharger mon rapport de stage (PDF)</a>
         </section>
 
         <section class="stage-section">
-            <h2>Présentation de l'entreprise</h2>
-            <p>
-                Tribu Nomade est une agence de communication digitale créée en 2014 et située à Argelès-Gazost. 
-                L’entreprise est dirigée par Cécile Bacquerie et Aurélien Saint-Martin.
-                L’agence accompagne principalement des professionnels, des entreprises, des associations et des collectivités dans leur communication et leur visibilité.
-                Son activité est assez diversifiée. Elle propose notamment la création et la maintenance de sites Internet, le référencement naturel, aussi appelé SEO, le graphisme, la photographie, la vidéo, la rédaction de contenus et la communication sur les réseaux sociaux.
-                Les clients sont principalement des acteurs locaux, notamment dans le tourisme, la restauration, le commerce, l’artisanat ou encore les services.
+            <h2>Présentation de l’entreprise</h2>
+            <p>Tribu Nomade est une agence de communication digitale créée en 2014 et située à Argelès-Gazost. Elle est dirigée par Cécile Bacquerie et Aurélien Saint-Martin, qui sont aussi chefs de projet. L’agence accompagne des professionnels, des entreprises, des associations et des collectivités : création et maintenance de sites Internet (Joomla), référencement naturel (SEO), graphisme, photographie, vidéo, rédaction et réseaux sociaux. Elle s’appuie aussi sur un réseau de freelances (graphiste, photographe, community manager, vidéaste).</p>
+            <div class="stage-presentation-image"><img src="../../images/logo-tribu-nomade.jpg" alt="Logo de Tribu Nomade"></div>
+            <h3 style="margin-top:24px;font-size:16px">Quelques clients</h3>
+            <div class="stage-tags">
+                <span>Luz Aventures</span><span>Le Moulin de Romy</span><span>Domaine de Beaucens</span><span>Auberge du Mont de Gez</span><span>Location de Ski Sempé</span><span>Restaurant La Couquelle</span><span>La Truite des Pyrénées</span><span>Camille Espigat</span><span>ONFOC 65</span><span>RBTP 65</span><span>Running Conseil</span><span>Camping des Cascades</span>
+            </div>
+            <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : organigramme de l’agence (rapport p. 5)<br><small>fichier : images/stage1-organigramme.jpg</small></p></div></figure>
+        </section>
 
-            </p>
-            <div class="stage-presentation-image">
-            <img src="../../images/logo-tribu-nomade.jpg"
-                 alt="Logo de Tribu Nomade">
-        </div>
+        <section class="stage-section">
+            <h2>Contexte et déroulement</h2>
+            <p>L’agence traversait une période chargée : plusieurs créations et refontes de sites, des maintenances en cours, puis une cyberattaque touchant plusieurs sites clients. Chaque matin, un point d’avancement permettait de répartir les tâches. Après une première phase d’observation, mes missions sont devenues de plus en plus techniques, ce qui m’a permis de gagner en autonomie tout en restant accompagné par mon tuteur.</p>
+            <h3 style="font-size:16px">Mon poste de travail</h3>
+            <p>Un ordinateur de bureau avec FileZilla (liaison avec les serveurs OVH), la suite Adobe (Illustrator, Photoshop) et un navigateur avec les outils de développement (DevTools).</p>
+            <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : photo de mon poste de travail (annexe 1)<br><small>fichier : images/stage1-poste-travail.jpg</small></p></div></figure>
         </section>
 
         <section class="stage-section">
             <h2>Mes missions</h2>
+            <div class="stage-card"><h3>Intégration et gestion de sites web</h3><p>Intégration de contenus sur des sites Joomla, personnalisation des templates et amélioration de l’affichage sur ordinateur et mobile.</p></div>
+            <div class="stage-card"><h3>Référencement naturel (SEO)</h3><p>Métadonnées, structure sémantique des pages et optimisation des images pour améliorer le référencement et les performances.</p></div>
+            <div class="stage-card"><h3>Maintenance et sécurité</h3><p>Sauvegardes, mises à jour de Joomla et de ses extensions, nettoyage et restauration de sites compromis.</p></div>
+            <div class="stage-card"><h3>Hébergement et bases de données</h3><p>Hébergement OVH, transferts de fichiers avec FileZilla et gestion de bases MySQL avec phpMyAdmin.</p></div>
+        </section>
 
-            <div class="stage-card">
-                <h3>Intégration et gestion de sites web</h3>
-                <p>
-                    Participation à l'intégration de contenus sur des sites
-                    Joomla, à leur maintenance et à l'amélioration de leur
-                    affichage sur différents écrans.
-                </p>
+        <section class="stage-section">
+            <h2>Projets réalisés en détail</h2>
+
+            <div class="stage-proj">
+                <h3>A. Initialisation d’un site et déploiement FTP</h3>
+                <p class="proj-client">Client : Location de Ski Sempé</p>
+                <p><strong>Contexte :</strong> création du site de présentation et de location de matériel de ski, sur un hébergement mutualisé OVH.</p>
+                <ul>
+                    <li>Création et configuration d’une base MySQL (InnoDB) depuis l’espace client OVH : mots de passe et droits d’accès.</li>
+                    <li>Transfert du package Joomla 5.2 avec FileZilla vers le serveur Apache, avec contrôle d’intégrité des fichiers.</li>
+                    <li>Installation de Joomla en liant le CMS à la base distante, puis personnalisation (couleurs, polices, menus) selon la charte du client.</li>
+                    <li>Prototypage UI/UX avec une IA générative (prompt engineering) pour comparer plusieurs structures de pages, puis création de l’arborescence sous Joomla (gammes enfants, adultes, débutants, experts), testée dans un environnement isolé (sandbox) avant validation par mon tuteur.</li>
+                </ul>
+                <p><strong>Ce que j’en retiens :</strong> l’IA est un outil d’assistance, elle ne remplace ni les compétences techniques ni le regard critique du développeur.</p>
+                <p><strong>Outils :</strong> OVH, MySQL, phpMyAdmin, FileZilla, Joomla 5.2, IA générative.</p>
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : capture FileZilla + interface Joomla 5.2 (annexe 2)<br><small>fichier : images/stage1-filezilla-joomla.jpg</small></p></div></figure>
             </div>
 
-            <div class="stage-card">
-                <h3>Référencement naturel (SEO)</h3>
-                <p>
-                    Travail sur les métadonnées, la structure sémantique des
-                    pages et l'optimisation des images afin d'améliorer le
-                    référencement et les performances des sites.
-                </p>
+            <div class="stage-proj">
+                <h3>B. Intégration front-end et composants dynamiques</h3>
+                <p class="proj-client">Clients : Domaine de Beaucens, Camille Espigat</p>
+                <ul>
+                    <li><strong>Responsive design (Mobile-First)</strong> : grille CSS de la page d’accueil du Domaine de Beaucens, points de rupture réglés pour passer du multi-colonnes sur ordinateur à une disposition verticale sur mobile.</li>
+                    <li><strong>Conformité RGPD</strong> : polices servies en local plutôt que par des serveurs tiers, ce qui bloque le suivi non consenti et réduit les requêtes DNS.</li>
+                    <li><strong>FAQ interactive</strong> pour le photographe Camille Espigat : accordéons gérés par la bibliothèque JavaScript UIkit, sans rechargement de page.</li>
+                </ul>
+                <p><strong>Outils :</strong> Joomla, YOOtheme Pro, HTML, CSS, JavaScript, UIkit.</p>
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : rendu final du site du Domaine de Beaucens (annexe 3)<br><small>fichier : images/stage1-beaucens.jpg</small></p></div></figure>
             </div>
 
-            <div class="stage-card">
-                <h3>Maintenance et sécurité</h3>
-                <p>
-                    Participation aux sauvegardes, aux mises à jour de Joomla
-                    et de ses extensions, ainsi qu'à des opérations de
-                    vérification et de nettoyage de sites présentant des
-                    problèmes de sécurité.
-                </p>
+            <div class="stage-proj">
+                <h3>C. Performances web et SEO technique</h3>
+                <p class="proj-client">Clients : Luz Aventures, Auberge du Mont de Gez</p>
+                <ul>
+                    <li><strong>Conflit de cache</strong> : mes modifications CSS ne s’affichaient pas côté client. Diagnostic : cache serveur agressif de Joomla. Solution : purge manuelle des répertoires de cache et versioning de l’appel aux feuilles de style.</li>
+                    <li><strong>Optimisation des médias</strong> : sous Photoshop, passage de 300 à 72 DPI et conversion PNG/JPG en WebP pour réduire le temps d’affichage du premier élément (LCP).</li>
+                    <li><strong>SEO on-page</strong> : balises titre uniques, méta-descriptions, une seule balise H1 par page et hiérarchie logique des sous-titres.</li>
+                </ul>
+                <p><strong>Résultat :</strong> poids des pages divisé par dix environ (exemple : une image de 4,5 Mo ramenée à 240 Ko).</p>
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : tableau comparatif avant/après optimisation (annexe 4)<br><small>fichier : images/stage1-tableau-optimisation.jpg</small></p></div></figure>
             </div>
 
-            <div class="stage-card">
-                <h3>Hébergement et bases de données</h3>
-                <p>
-                    Découverte de l'hébergement OVH, des transferts de fichiers
-                    avec FileZilla et de la gestion de bases de données MySQL
-                    avec phpMyAdmin.
-                </p>
+            <div class="stage-proj">
+                <h3>D. Cyberattaque : restauration des sites et plan de reprise</h3>
+                <p class="proj-client">Plusieurs sites clients (tourisme, hébergement, loisirs)</p>
+                <p><strong>Contexte :</strong> une vulnérabilité d’une extension Joomla très utilisée a été exploitée et plusieurs sites gérés par l’agence ont été piratés, juste avant la saison estivale. Il fallait rétablir les services rapidement, sous la supervision de mon tuteur.</p>
+                <ol class="stage-ol" style="font-size:14px;color:#4a6a8a;line-height:1.8">
+                    <li><strong>Isolation et sauvegardes</strong> : téléchargement des fichiers par FTP et export des bases MySQL (dumps) pour figer l’état des données.</li>
+                    <li><strong>Analyse post-mortem</strong> : lecture des logs d’erreurs Apache pour dater l’attaque et repérer l’extension falsifiée.</li>
+                    <li><strong>Audit automatisé</strong> avec MySites.guru pour détecter backdoors et fichiers modifiés.</li>
+                    <li><strong>Nettoyage et durcissement</strong> : suppression du code corrompu, mise à jour vers Joomla 5.2 et des extensions, désactivation des fonctions système dangereuses. Score de sécurité validé à 100 %.</li>
+                    <li><strong>Recette et relation client</strong> : tests fonctionnels avec la console du navigateur et suivi des retours des utilisateurs.</li>
+                </ol>
+                <p><strong>Ce que j’en retiens :</strong> l’importance des sauvegardes régulières, des mises à jour de sécurité et de la réactivité en situation d’incident. C’est la mission qui a le plus renforcé mon intérêt pour la cybersécurité.</p>
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : capture d’un scan MySites.guru ou des logs analysés<br><small>fichier : images/stage1-cyberattaque.jpg</small></p></div></figure>
+            </div>
+
+            <div class="stage-proj">
+                <h3>E. Supports graphiques (PAO) et suivi de projet</h3>
+                <p class="proj-client">Clients : Restaurant La Couquelle, La Truite des Pyrénées</p>
+                <ul>
+                    <li><strong>Carte des boissons</strong> sous Illustrator : calques logiques, polices vectorisées, fonds perdus et repères de coupe.</li>
+                    <li><strong>Packaging</strong> de La Truite des Pyrénées : labels de tri sélectif, mentions légales et codes-barres vectoriels lisibles en caisse.</li>
+                    <li><strong>Tableau de suivi partagé (KPI)</strong> que j’ai conçu : état du noyau, de l’audit de sécurité, de la base phpMyAdmin et du transfert FTP pour chaque site client.</li>
+                </ul>
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : maquettes Illustrator (annexe 5) et tableau de suivi (annexe 6)<br><small>fichier : images/stage1-pao-kpi.jpg</small></p></div></figure>
+            </div>
+        </section>
+
+        <section class="stage-section">
+            <h2>Le stage en chiffres</h2>
+            <div class="stage-stats">
+                <div class="stat-box"><b>5</b><span>semaines de stage</span></div>
+                <div class="stat-box"><b>12</b><span>clients cités dans le rapport</span></div>
+                <div class="stat-box"><b>4,5 Mo → 240 Ko</b><span>exemple d’optimisation d’image</span></div>
+                <div class="stat-box"><b>100 %</b><span>score de sécurité après nettoyage</span></div>
             </div>
         </section>
 
         <section class="stage-section">
             <h2>Technologies et outils utilisés</h2>
-
             <div class="stage-tags">
-                <span>Joomla</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>UIkit</span>
-                <span>MySQL</span>
-                <span>phpMyAdmin</span>
-                <span>OVH</span>
-                <span>FileZilla</span>
-                <span>MySites.guru</span>
+                <span>Joomla 5.2</span><span>YOOtheme Pro</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UIkit</span><span>MySQL</span><span>phpMyAdmin</span><span>OVH</span><span>Apache</span><span>FileZilla</span><span>MySites.guru</span><span>Adobe Illustrator</span><span>Adobe Photoshop</span><span>IA générative</span>
+            </div>
+        </section>
+
+        <section class="stage-section">
+            <h2>Difficultés rencontrées et solutions</h2>
+            <div class="stage-card"><h3>Découvrir Joomla</h3><p>Habitué à WordPress, j’ai dû m’adapter à la logique des templates, composants et modules grâce aux conseils de mon tuteur et à la pratique quotidienne.</p></div>
+            <div class="stage-card"><h3>Poids des images</h3><p>J’ai sous-estimé son impact au début. J’ai appris à trouver l’équilibre entre qualité visuelle et rapidité d’affichage.</p></div>
+            <div class="stage-card"><h3>Hébergements OVH</h3><p>Bases de données, FTP et sauvegardes demandaient une grande rigueur, car une erreur pouvait rendre un site inaccessible.</p></div>
+            <div class="stage-card"><h3>La cyberattaque</h3><p>Situation la plus complexe : comprendre vite l’origine du problème et restaurer les sites en garantissant l’intégrité des données.</p></div>
+        </section>
+
+        <section class="stage-section">
+            <h2>Compétences du référentiel BTS SIO mobilisées</h2>
+            <div class="table-wrap">
+            <table class="stage-table">
+                <thead><tr><th>Code</th><th>Activité</th><th>Application pendant le stage</th></tr></thead>
+                <tbody>
+                    <tr><td>B1.1</td><td>Gérer le patrimoine informatique</td><td>Hébergements OVH, sauvegardes, espace de stockage des bases de données.</td></tr>
+                    <tr><td>B1.2</td><td>Répondre aux incidents et aux demandes d’assistance</td><td>Gestion de la crise cyber, analyse post-crash, diagnostic des dysfonctionnements.</td></tr>
+                    <tr><td>B1.4</td><td>Travailler en mode projet</td><td>Tableau de bord partagé avec indicateurs de suivi.</td></tr>
+                    <tr><td>B2.1</td><td>Conception de solutions applicatives</td><td>Création et administration de bases MySQL sur OVH.</td></tr>
+                    <tr><td>B2.2</td><td>Conception et développement d’une solution applicative</td><td>Déploiement FTP, paramétrage de Joomla 5.2 (projet Location Sempé).</td></tr>
+                    <tr><td>B2.3</td><td>Gérer des données</td><td>Structuration et requêtage des tables SQL pour les contenus.</td></tr>
+                    <tr><td>B3.3</td><td>Sécuriser les développements et les infrastructures</td><td>Plan de reprise d’activité, nettoyage du code, durcissement de Joomla.</td></tr>
+                    <tr><td>B3.4</td><td>Gérer la cybersécurité des développements applicatifs</td><td>Audits de vulnérabilités avec MySites.guru, contrôle d’intégrité des scripts.</td></tr>
+                    <tr><td>B3.5</td><td>Gérer la cybersécurité des infrastructures</td><td>Réinjection de dumps sains, droits d’accès, surveillance des logs Apache.</td></tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+
+        <section class="stage-section">
+            <h2>Annexes</h2>
+            <p>Les visuels ci-dessous sont extraits de mon rapport de stage.</p>
+            <div class="annexes-grid">
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : Annexe 1 : poste de travail<br><small>fichier : images/annexe1-poste.jpg</small></p></div></figure>
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : Annexe 2 : FileZilla et Joomla<br><small>fichier : images/annexe2-filezilla.jpg</small></p></div></figure>
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : Annexe 3 : rendu Domaine de Beaucens<br><small>fichier : images/annexe3-beaucens.jpg</small></p></div></figure>
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : Annexe 4 : tableau d’optimisation<br><small>fichier : images/annexe4-optimisation.jpg</small></p></div></figure>
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : Annexe 5 : maquettes PAO<br><small>fichier : images/annexe5-pao.jpg</small></p></div></figure>
+                <figure class="stage-fig"><div class="img-placeholder"><p>+ Image à ajouter : Annexe 6 : tableau de suivi<br><small>fichier : images/annexe6-suivi.jpg</small></p></div></figure>
             </div>
         </section>
 
         <section class="stage-section">
             <h2>Bilan du stage</h2>
-            <p>
-                Ce stage m'a permis de découvrir le fonctionnement d'une agence
-                web et de participer à différentes étapes de la gestion d'un
-                site internet. J'ai notamment développé mes connaissances en
-                intégration web, en maintenance, en référencement naturel et
-                en sécurité.
-            </p>
-            <p>
-                Même si je n'ai pas développé entièrement un site de A à Z,
-                j'ai pu participer à plusieurs étapes de son intégration et
-                mieux comprendre le travail réalisé au quotidien dans une
-                agence numérique.
-            </p>
+            <p>Ce stage m’a permis de découvrir le fonctionnement d’une agence web et de participer à différentes étapes de la vie d’un site : installation, intégration, optimisation, maintenance et sécurisation. Même si je n’ai pas développé entièrement un site de A à Z, j’ai participé à l’ensemble de son cycle de vie.</p>
+            <p>J’ai découvert qu’un développeur ne fait pas que coder : il écoute les clients, travaille en équipe, gère des serveurs et protège les données. J’ai notamment assisté à la présentation d’un logo à une cliente, ce qui m’a montré l’importance de la relation client. Enfin, la cyberattaque a confirmé mon intérêt pour la cybersécurité et l’administration système, et mon souhait de poursuivre mes études dans ces domaines.</p>
         </section>
 
         <div class="stage-back">
-            <a href="../../index.html">← Retour à l'accueil</a>
+            <a href="../../index.html">← Retour à l’accueil</a>
         </div>
     </main>
-    <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-</script>
+    <script src="../../js/main.js"></script>
 </body>
 </html>
