@@ -27,6 +27,14 @@
 .annexes-grid figcaption,.stage-fig figcaption{font-size:12px;color:#6a8aaa;text-align:center;margin-top:-8px;margin-bottom:12px}
 .stage-fig{margin:12px 0 4px}
 </style>
+<style>
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:14px;margin-top:10px}
+.tool-item{background:#fff;border:1px solid #c8dff0;border-radius:12px;padding:16px 8px;text-align:center;transition:transform .2s,box-shadow .2s}
+.tool-item:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(27,58,92,.12)}
+.tool-item img,.tool-initial{width:44px;height:44px;margin:0 auto 8px;object-fit:contain;display:block}
+.tool-initial{background:#eaf2fa;color:#2a5a8c;border-radius:10px;font:700 20px/44px 'Outfit',sans-serif}
+.tool-item span:last-child{font-size:12px;font-weight:600;color:#1b3a5c}
+</style>
 </head>
 
 <body>
@@ -184,8 +192,22 @@
 
         <section class="stage-section">
             <h2>Technologies et outils utilisés</h2>
-            <div class="stage-tags">
-                <span>Joomla 5.2</span><span>YOOtheme Pro</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UIkit</span><span>MySQL</span><span>phpMyAdmin</span><span>OVH</span><span>Apache</span><span>FileZilla</span><span>MySites.guru</span><span>Adobe Illustrator</span><span>Adobe Photoshop</span><span>IA générative</span>
+            <div class="tool-grid">
+                <div class="tool-item"><img src="../../images/logos/joomla.svg" alt="Logo Joomla 5.2" loading="lazy"><span>Joomla 5.2</span></div>
+                <div class="tool-item"><span class="tool-initial">Y</span><span>YOOtheme Pro</span></div>
+                <div class="tool-item"><img src="../../images/logos/html5.svg" alt="Logo HTML5" loading="lazy"><span>HTML5</span></div>
+                <div class="tool-item"><img src="../../images/logos/css3.svg" alt="Logo CSS3" loading="lazy"><span>CSS3</span></div>
+                <div class="tool-item"><img src="../../images/logos/javascript.svg" alt="Logo JavaScript" loading="lazy"><span>JavaScript</span></div>
+                <div class="tool-item"><img src="../../images/logos/uikit.svg" alt="Logo UIkit" loading="lazy"><span>UIkit</span></div>
+                <div class="tool-item"><img src="../../images/logos/mysql.svg" alt="Logo MySQL" loading="lazy"><span>MySQL</span></div>
+                <div class="tool-item"><img src="../../images/logos/phpmyadmin.svg" alt="Logo phpMyAdmin" loading="lazy"><span>phpMyAdmin</span></div>
+                <div class="tool-item"><img src="../../images/logos/ovh.svg" alt="Logo OVH" loading="lazy"><span>OVH</span></div>
+                <div class="tool-item"><img src="../../images/logos/apache.svg" alt="Logo Apache" loading="lazy"><span>Apache</span></div>
+                <div class="tool-item"><img src="../../images/logos/filezilla.svg" alt="Logo FileZilla" loading="lazy"><span>FileZilla</span></div>
+                <div class="tool-item"><span class="tool-initial">M</span><span>MySites.guru</span></div>
+                <div class="tool-item"><img src="../../images/logos/illustrator.svg" alt="Logo Adobe Illustrator" loading="lazy"><span>Adobe Illustrator</span></div>
+                <div class="tool-item"><img src="../../images/logos/photoshop.svg" alt="Logo Adobe Photoshop" loading="lazy"><span>Adobe Photoshop</span></div>
+                <div class="tool-item"><span class="tool-initial">I</span><span>IA générative</span></div>
             </div>
         </section>
 
