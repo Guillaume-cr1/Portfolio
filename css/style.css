@@ -567,4 +567,11 @@ footer p { color: #7aafc8; font-size: 13px; }
         flex: auto;
         align-self: center;
     }
+    
+    .nav-submenu li a.active {
+    color: #1b3a5c;
+    font-weight: 700;
+    text-decoration: none;
+    background: #eaf2fa;
+}
 }

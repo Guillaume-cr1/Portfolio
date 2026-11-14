@@ -47,6 +47,9 @@ details{background:#fff;border:1px solid #c8dff0;border-radius:10px;padding:12px
 summary{cursor:pointer;font-weight:600;color:#1b3a5c;font-size:14px}
 details p{font-size:13px;color:#5a7a96;line-height:1.7;margin-top:8px}
 .stage-fig{margin:12px 0}
+.more-wrap{text-align:center;margin-top:8px}
+.more-btn{font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;background:#fff;color:#1b3a5c;border:2px solid #1b3a5c;border-radius:10px;padding:10px 28px;cursor:pointer}
+.more-btn:hover{background:#1b3a5c;color:#fff}
 @media(max-width:640px){.adv{grid-template-columns:1fr}}
 </style>
 </head>
@@ -131,7 +134,7 @@ details p{font-size:13px;color:#5a7a96;line-height:1.7;margin-top:8px}
 <article class="article-card j-item" data-month="septembre"><div class="article-meta"><span class="article-date">23–29 septembre 2026</span><span class="article-tag-label">Septembre</span></div><div class="article-body"><h3>API Strava et MCP</h3><p class="j-src">Source : Strava Support – API and MCP FAQ ; documentation du connecteur MCP ; GoldenCheetah</p><p class="j-res"><strong>Résumé :</strong> La documentation précise les possibilités et limites d’accès aux données, ainsi que les conditions d’utilisation des API et connecteurs. Un assistant peut exploiter les données autorisées, mais l’intégration dépend des accès et des règles de la plateforme.</p><div class="j-ret"><strong>Ce que j’en retiens</strong><p>Prendre en compte la faisabilité technique et les conditions d’accès aux données.</p></div><a class="article-link" href="https://support.strava.com/en-us/articles/15401526-strava-api-and-mcp-faq" target="_blank" rel="noopener noreferrer">Lire l’article (Strava Support) →</a></div></article>
 <article class="article-card j-item" data-month="septembre"><div class="article-meta"><span class="article-date">30 septembre–6 octobre 2026</span><span class="article-tag-label">Septembre</span></div><div class="article-body"><h3>Sécurité et confidentialité des données</h3><p class="j-src">Source : Strava Press ; mises à jour TrainingPeaks</p><p class="j-res"><strong>Résumé :</strong> La collecte et la synchronisation des données nécessitent de réfléchir aux autorisations, aux jetons d’accès et à la traçabilité des échanges. Un outil d’analyse assisté par IA doit limiter les données collectées et expliquer leur usage.</p><div class="j-ret"><strong>Ce que j’en retiens</strong><p>Intégrer sécurité, consentement et confidentialité dans une solution technique.</p></div><a class="article-link" href="https://press.strava.com" target="_blank" rel="noopener noreferrer">Lire l’article (Strava Press) →</a></div></article>
 <article class="article-card j-item" data-month="octobre"><div class="article-meta"><span class="article-date">7–13 octobre 2026</span><span class="article-tag-label">Octobre</span></div><div class="article-body"><h3>Vers des assistants qui expliquent la performance</h3><p class="j-src">Source : Strava MCP ; TrainingPeaks/Oura ; versions de GoldenCheetah</p><p class="j-res"><strong>Résumé :</strong> La veille converge vers des outils qui réunissent plusieurs sources, affichent des indicateurs et expliquent les résultats en langage naturel. L’IA peut faciliter l’interprétation et la synthèse, tandis que les calculs et les sources doivent rester vérifiables.</p><div class="j-ret"><strong>Ce que j’en retiens</strong><p>Piste de projet BTS : importer des données FIT/GPX/TCX, les stocker, afficher des courbes et générer une synthèse.</p></div><a class="article-link" href="https://support.strava.com/en-us/articles/15401531-what-is-the-strava-mcp-connector" target="_blank" rel="noopener noreferrer">Lire l’article (Strava Support) →</a></div></article>
-
+<div class="more-wrap"><button type="button" class="more-btn" id="moreJ"></button></div>
         </div></section>
 
         <section class="page-section bg-light"><div class="container">
@@ -148,7 +151,7 @@ details p{font-size:13px;color:#5a7a96;line-height:1.7;margin-top:8px}
 <div class="src-item"><div class="src-head"><h3>Cycling Weekly — Des prédictions de l’IA pour les Championnats du monde</h3><span class="src-date">25/09/2026</span></div><p class="src-meta">Cycling Weekly, auteur à vérifier dans l’article · Article sportif </p><p>L’article mentionné dans les archives demande à une IA de prédire les vainqueurs des Championnats du monde. Intéressant pour étudier les prédictions sportives, mais il faut distinguer un pronostic généré par IA d’une analyse scientifique des performances.</p></div>
 <div class="src-item"><div class="src-head"><h3>RestOrTrain — Free AI Cycling Coaches in 2026</h3><span class="src-date">25/09/2026</span></div><p class="src-meta">RestOrTrain · Article explicatif / comparatif <span class="v-tag v-warn">Source commerciale</span></p><p>Présente les possibilités et les limites des assistants d’entraînement par IA. Les recommandations peuvent utiliser les sorties précédentes, le sommeil ou la fréquence cardiaque, mais les calculs et conseils doivent être vérifiés. C’est une source liée à un service commercial.</p></div>
 <div class="src-item"><div class="src-head"><h3>AI Cycling — The State of AI in Cycling Training</h3><span class="src-date">01/10/2026</span></div><p class="src-meta">AI Cycling · Rapport de veille </p><p>Fait le point sur les outils d’IA utilisés dans l’entraînement cycliste : adaptation des séances, analyse des sorties, plateformes d’entraînement et cyclisme professionnel. Le rapport souligne aussi le manque d’études indépendantes permettant de confirmer certaines promesses commerciales.</p></div>
-
+<div class="more-wrap"><button type="button" class="more-btn" id="moreS"></button></div>
             <div class="v-intro" style="margin-top:20px"><p>Les sources commerciales (comparatifs d’applications) sont recoupées avec des sources officielles et scientifiques. Plusieurs sources soulignent aussi le manque d’études indépendantes pour confirmer certaines promesses des outils d’IA.</p></div>
         </div></section>
 
@@ -185,7 +188,14 @@ details p{font-size:13px;color:#5a7a96;line-height:1.7;margin-top:8px}
         </div>
     </footer>
 
-    <script>document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelectorAll('.j-item').forEach(i=>{i.style.display=(b.dataset.f==='all'||i.dataset.month===b.dataset.f)?'':'none'})}));</script>
+    <script>(function(){var J=[].slice.call(document.querySelectorAll('.j-item')),S=[].slice.call(document.querySelectorAll('.src-item')),bj=document.getElementById('moreJ'),bs=document.getElementById('moreS'),f='all',ej=false,es=false,LJ=5,LS=4;
+        function rj(){var l=J.filter(function(i){return f==='all'||i.dataset.month===f});J.forEach(function(i){i.style.display='none'});l.forEach(function(i,k){i.style.display=(f==='all'&&!ej&&k>=LJ)?'none':''});if(f==='all'&&l.length>LJ){bj.style.display='';bj.textContent=ej?'Voir moins':'Voir plus ('+(l.length-LJ)+' autres semaines)'}else{bj.style.display='none'}}
+        function rs(){S.forEach(function(i,k){i.style.display=(!es&&k>=LS)?'none':''});bs.style.display=S.length>LS?'':'none';bs.textContent=es?'Voir moins':'Voir plus ('+(S.length-LS)+' autres sources)'}
+        document.querySelectorAll('.filters button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.filters button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');f=b.dataset.f;rj()})});
+        bj.addEventListener('click',function(){ej=!ej;rj();if(!ej){document.getElementById('journal').scrollIntoView()}});
+        bs.addEventListener('click',function(){es=!es;rs()});
+        rj();rs()})();
+    </script>
 <script src="../js/main.js"></script>
 </body>
 </html>
